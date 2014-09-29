@@ -1,0 +1,16 @@
+Özyeğn University iBeacon specification sheet
+
+
+|----------------|----------------|-------------------------------------|
+| Major (16-bit) | Minor (16-bit) | Meaning                             |
+|----------------|----------------|-------------------------------------|
+| 0              | xxxx           | Pure location data, in which xxxx   |
+|                |                | (Minor value) is the room ID        |
+|----------------|----------------|-------------------------------------|
+| 1              | xxxx           | One-time text notification (for     |
+|                |                | example, for first-time users) (May |
+|                |                | include URL). Mark xxxx as seen.    |
+|----------------|----------------|-------------------------------------|
+| 2              | xxxx           | Continuous notification (One per    |
+|                |                | day?)                               |
+|----------------|----------------|-------------------------------------|
