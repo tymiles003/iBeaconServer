@@ -1,16 +1,18 @@
 Özyeğn University iBeacon specification sheet
 
+UUID: 6B0612AC-E06F-7A75-6E61-766279616575
 
-|----------------|----------------|-------------------------------------|
-| Major (16-bit) | Minor (16-bit) | Meaning                             |
-|----------------|----------------|-------------------------------------|
-| 0              | xxxx           | Pure location data, in which xxxx   |
-|                |                | (Minor value) is the room ID        |
-|----------------|----------------|-------------------------------------|
-| 1              | xxxx           | One-time text notification (for     |
-|                |                | example, for first-time users) (May |
-|                |                | include URL). Mark xxxx as seen.    |
-|----------------|----------------|-------------------------------------|
-| 2              | xxxx           | Continuous notification (One per    |
-|                |                | day?)                               |
-|----------------|----------------|-------------------------------------|
+|  16-bit Unsigned Int (UInt16) |
+|---------------|---------------|-------------------------------------|
+| Major         | Minor         | Meaning                             |
+|---------------|---------------|-------------------------------------|
+| 0             | 0 - 65536     | Pure location data, in which xxxx   |
+|               |               | (Minor value) is the room ID        |
+|---------------|---------------|-------------------------------------|
+| 1             | 0 - 65536     | One-time text notification (for     |
+|               |               | example, for first-time users) (May |
+|               |               | include URL). Mark xxxx as seen.    |
+|---------------|---------------|-------------------------------------|
+| 2             | 0 - 65536     | Continuous notification (One per    |
+|               |               | day?)                               |
+|---------------|---------------|-------------------------------------|
